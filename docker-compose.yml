@@ -31,11 +31,11 @@ services:
     environment:
       - DISPLAY_CONTAINER_NAME=chrome
   my_project:
-    build: .
+    image: kchernopiatova/amazon-project
     depends_on:
       - chrome
       - firefox
     environment:
-      - HUB_HOST=hub
+      - HUB_HOST=192.168.0.101
       - BROWSER=chrome
       - MODULE=web.xml
