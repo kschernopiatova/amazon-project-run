@@ -36,6 +36,6 @@ services:
       - chrome
       - firefox
     environment:
-      - HUB_HOST=192.168.0.101
-      - BROWSER=chrome
+      - HUB_HOST=hub
+      - BROWSER=firefox
       - MODULE=web.xml
