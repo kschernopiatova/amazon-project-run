@@ -31,7 +31,7 @@ services:
     environment:
       - DISPLAY_CONTAINER_NAME=chrome
   my_project:
-    build: .
+    image: kchernopiatova/amazon-project
     depends_on:
       - chrome
       - firefox
